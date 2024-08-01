@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOT Ceramics</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:wght@900&family=Outfit:wght@100..900&family=Ubuntu&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:wght@900&family=Outfit:wght@100..900&family=Ubuntu&family=Varela+Round&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header text-center">
+        <video autoplay muted loop id="background-video">
+            <source src="Videos/open.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="header-overlay">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-custom">
+              <a class="navbar-brand" href="#">
+  <img src="Videos/DOT.jpeg" alt="DOT Ceramics Logo" class="navbar-logo">
+</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Contact
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#"><i class="fa fa-envelope-o fa-2x"></i> dotceramics@gmail.com</a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-phone fa-2x"></i> +91 9074853529</a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-whatsapp fa-2x"></i> 9074853529</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-us">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Products</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+            <div class="header-content">
+    <div class="container">
+        <h1>Welcome to DOT Ceramics</h1>
+        <h3 class="PHRASE">Elevate Your Dining</h3>
+        <a href="#most-loved" class="btn btn-primary SHOPPIE d-none d-md-block">Shop Now</a>
+        <a href="#mobile-most-loved" class="btn btn-primary SHOPPIE d-block d-md-none">Shop Now</a>
+
+    </div>
+</div>
+
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Our Story</h3>
+                    <p>
+                        At DOT Ceramics, we are passionate about creating high-quality ceramic ware that enhances your dining and living experience. Our journey began with a simple goal: to bring exquisite, handcrafted ceramics to people who appreciate artistry and craftsmanship.
+                    </p>
+                    <p>
+                        Our team of skilled artisans uses traditional techniques combined with modern design sensibilities to produce beautiful and functional pieces. Each item is carefully crafted to meet our high standards of quality and aesthetics.
+                    </p>
+                    <p>
+                        We believe that every piece of ceramic ware tells a story and brings a touch of elegance to any space. Whether you're looking for elegant vases, stylish mugs, or practical plates, our collection offers something for every taste.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Our Values</h3>
+                    <p>
+                        Our commitment to quality and customer satisfaction drives everything we do. We value integrity, creativity, and attention to detail in every aspect of our business. From sourcing the finest materials to ensuring exceptional craftsmanship, we strive to exceed your expectations.
+                    </p>
+                    <p>
+                        We also believe in sustainability and responsible production practices. We work to minimize our environmental impact and support fair labor practices throughout our supply chain.
+                    </p>
+                    <p>
+                        Thank you for choosing DOT Ceramics. We are honored to be a part of your home and look forward to serving you with our beautiful ceramic creations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products py-5 d-none d-md-block"">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Products</h2>
+            <div id="productCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="Videos/teapot.jpg" class="card-img-top" alt="Teapots">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Teapots</h5>
+                                        <p class="card-text">Discover the elegance and craftsmanship of our teapots.</p>
+                                        <a href="#" class="btn btn-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="Videos/mug.jpg" class="card-img-top" alt="Mugs">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mugs</h5>
+                                        <p class="card-text">Enjoy your favorite beverages in style with our beautifully designed mugs.</p>
+                                        <a href="#" class="btn btn-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="Videos/plate.jpg" class="card-img-top" alt="Plates">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Plates</h5>
+                                        <p class="card-text">Elevate your dining experience with our exquisite plate collection.</p>
+                                        <a href="#" class="btn btn-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more carousel-item divs for more products -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="Videos/vases.jpg" class="card-img-top" alt="Vases">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Vases</h5>
+                                        <p class="card-text">Elegant vases to enhance your decor.</p>
+                                        <a href="#" class="btn btn-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="Videos/bowls.jpg" class="card-img-top" alt="Bowls">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bowls</h5>
+                                        <p class="card-text">Beautiful bowls for everyday use.</p>
+                                        <a href="#" class="btn btn-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="Videos/serv.jpg" class="card-img-top" alt="Serving Dishes">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Serving Dishes</h5>
+                                        <p class="card-text">Serving dishes perfect for every occasion.</p>
+                                        <a href="#" class="btn btn-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Products Section -->
+<section id="mobile-products" class="mobile-products py-5 d-block d-md-none">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Products</h2>
+        <div id="mobileProductCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card">
+                        <img src="Videos/teapot.jpg" class="card-img-top" alt="Teapots">
+                        <div class="card-body">
+                            <h5 class="card-title">Teapots</h5>
+                            <p class="card-text">Discover the elegance and craftsmanship of our teapots.</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="Videos/mug.jpg" class="card-img-top" alt="Mugs">
+                        <div class="card-body">
+                            <h5 class="card-title">Mugs</h5>
+                            <p class="card-text">Enjoy your favorite beverages in style with our beautifully designed mugs.</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="Videos/plate.jpg" class="card-img-top" alt="Plates">
+                        <div class="card-body">
+                            <h5 class="card-title">Plates</h5>
+                            <p class="card-text">Elevate your dining experience with our exquisite plate collection.</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="Videos/vases.jpg" class="card-img-top" alt="Vases">
+                        <div class="card-body">
+                            <h5 class="card-title">Vases</h5>
+                            <p class="card-text">Elegant vases to enhance your decor.</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="Videos/bowls.jpg" class="card-img-top" alt="Bowls">
+                        <div class="card-body">
+                            <h5 class="card-title">Bowls</h5>
+                            <p class="card-text">Beautiful bowls for everyday use.</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="Videos/serv.jpg" class="card-img-top" alt="Serving Dishes">
+                        <div class="card-body">
+                            <h5 class="card-title">Serving Dishes</h5>
+                            <p class="card-text">Serving dishes perfect for every occasion.</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#mobileProductCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#mobileProductCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Most Loved Section -->
+<section id="most-loved" class="most-loved py-5 d-none d-md-block">
+    <div class="container">
+        <h2 class="text-center mb-4">Most Loved</h2>
+        <div id="mostLovedCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="Videos/product1.jpg" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="Videos/product2.jpg" class="card-img-top" alt="Product 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 2</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="Videos/product3.jpg" class="card-img-top" alt="Product 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 3</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="Videos/product4.jpg" class="card-img-top" alt="Product 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 4</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="Videos/product5.jpg" class="card-img-top" alt="Product 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 5</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="Videos/product6.jpg" class="card-img-top" alt="Product 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 6</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional carousel items can be added here -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="Videos/product7.jpg" class="card-img-top" alt="Product 7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 7</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="Videos/product8.jpg" class="card-img-top" alt="Product 8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 8</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="Videos/product9.jpg" class="card-img-top" alt="Product 9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 9</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="Videos/product10.jpg" class="card-img-top" alt="Product 10">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 10</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="Videos/product11.jpg" class="card-img-top" alt="Product 11">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 11</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="Videos/product12.jpg" class="card-img-top" alt="Product 12">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 12</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#mostLovedCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#mostLovedCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Most Loved Section for Mobile -->
+<section id="mobile-most-loved" class="most-loved py-5 d-block d-md-none">
+    <div class="container">
+        <h2 class="text-center mb-4">Most Loved</h2>
+        <div id="mobileMostLovedCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card">
+                        <img src="Videos/saucer.jpg" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="Videos/product2.jpg" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 2</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="Videos/product3.jpg" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 3</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="Videos/product4.jpg" class="card-img-top" alt="Product 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 4</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="Videos/product5.jpg" class="card-img-top" alt="Product 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 5</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="Videos/product6.jpg" class="card-img-top" alt="Product 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 6</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="Videos/product7.jpg" class="card-img-top" alt="Product 7">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 7</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="Videos/product8.jpg" class="card-img-top" alt="Product 8">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 8</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="Videos/product9.jpg" class="card-img-top" alt="Product 9">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 9</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="Videos/product10.jpg" class="card-img-top" alt="Product 10">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 10</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="Videos/product11.jpg" class="card-img-top" alt="Product 11">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 11</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="Videos/product12.jpg" class="card-img-top" alt="Product 12">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 12</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#mobileMostLovedCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#mobileMostLovedCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Video Background Section -->
+    <section class="video-background">
+        <video autoplay muted loop id="bgVideo">
+            <source src="Videos/Quality.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-content">
+            <div class="container text-center text-white">
+                <h2>Discover Our Values, Quality, and Best Prices</h2>
+                <p>Explore our commitment to craftsmanship, sustainability, and customer satisfaction.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <span class="text-muted">DOT Ceramics &copy; 2024</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

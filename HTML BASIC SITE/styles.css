@@ -1,0 +1,455 @@
+body {
+  background: linear-gradient(60deg, #FEFBF6, #B4B4B8);
+ /* Light background color for the whole page */
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+    ont-weight: 400;
+  font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.header {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide anything that overflows */
+}
+
+/* Ensure the logo fits well within the navbar */
+.navbar-logo {
+    max-height: 70px; /* Adjust this height based on your logo's size */
+    width: auto; /* Maintain the aspect ratio of the logo */
+}
+
+/* Optional: Adjust the navbar-brand padding if needed */
+.navbar-brand {
+    padding: 0;
+}
+
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire header area */
+    z-index: -1; /* Ensure the video is behind the content */
+}
+
+.PHRASE{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    color: white; /* Text color */
+}
+
+.header-content {
+    z-index: 1; /* Ensure content is above the video */
+}
+
+.header-content .container {
+    padding: 2rem; /* Add padding for better visibility */
+}
+
+.header-content h1 {
+    font-size: 3.5rem; /* Adjust font size */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+.header-content p {
+    font-size: 1.5rem; /* Adjust font size */
+    max-width: 600px; /* Limit max width */
+    margin: 0 auto; /* Center align */
+}
+
+.header-content .btn-primary {
+    background-color: #A0937D; /* Customize color */
+    border-color: #A0937D; /* Match border color */
+    padding: 0.75rem 1.25rem; /* Adjust padding */
+    font-size: 1rem; /* Adjust font size */
+    margin-top: 1rem; /* Add space above button */
+}
+
+.header-content .btn-primary:hover {
+    background-color: #8a7f65; /* Darker shade on hover */
+    border-color: #8a7f65; /* Match border color on hover */
+}
+
+
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+    .header-content p {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+}
+
+
+
+/* Navbar styling */
+.navbar-custom {
+    background: linear-gradient(60deg, #EADFB4, #B4B4B8); /* Solid background color */
+    min-height: 80px; /* Adjust the height as needed */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffffff; /* Change this to your desired text color */
+    font-size: 1.3rem; /* Increase the font size */
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #dcdcdc; /* Change this to your desired hover color */
+}
+
+/* Header content styling */
+.header-content {
+    position: relative;
+    z-index: 2; /* Ensure content is above the video */
+    color: #fff;
+    padding: 2rem; /* Add some padding for better visibility */
+    text-align: center; /* Center-align the text */
+}
+
+/* Products section styling */
+.products {
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.products .card {
+    border: none; /* Remove card border if needed */
+    overflow: hidden; /* Ensure content stays within bounds */
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.products .card-img-top {
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.products .card:hover .card-img-top {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+/* Most Loved section styling */
+.most-loved {
+    background: linear-gradient(60deg, #FEFBF6, #B4B4B8);
+    padding: 50px 0; /* Adjust padding as needed */
+}
+
+.most-loved .card {
+    border: none; /* Remove card border if needed */
+    overflow: hidden; /* Ensure content stays within bounds */
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.most-loved .card-img-top {
+    height: 150px; /* Set a fixed height for images */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.most-loved .card:hover .card-img-top {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+/* Carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Adjust the width to move buttons closer to edges */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #A0937D; /* Change the color as needed */
+    border-radius: 50%;
+    width: 2rem; /* Adjust size as needed */
+    height: 2rem; /* Adjust size as needed */
+    margin-bottom: 2rem;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    /* Ensure only one carousel item is shown at a time on mobile */
+    .products .carousel-inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products .carousel-item {
+        flex: 0 0 100%; /* Each item takes full width */
+        max-width: 100%; /* Ensure no overflow */
+    }
+
+    /* Adjust card sizing to fit better in a single item view */
+    .products .card {
+        max-width: 100%; /* Full width of carousel item */
+    }
+
+    .products .carousel-control-prev,
+    .products .carousel-control-next {
+        width: 5%; /* Adjust the width to move buttons closer to edges */
+    }
+
+    .products .carousel-control-prev-icon,
+    .products .carousel-control-next-icon {
+        background-color: #A0937D; /* Change the color as needed */
+        border-radius: 50%;
+        width: 2rem; /* Adjust size as needed */
+        height: 2rem; /* Adjust size as needed */
+        margin-bottom: 2rem;
+    }
+}
+
+/* Increase the size of cards in the Most Loved carousel */
+#mostLovedCarousel .card {
+    width: 100%; /* Make the card occupy the full width of its column */
+    max-width: 200px; /* Set a maximum width for the card */
+}
+
+/* Adjust card body height for consistency */
+#mostLovedCarousel .card .card-body {
+    height: 200px; /* Set a fixed height for card body */
+}
+
+/* Optional: Center align the cards within the carousel */
+#mostLovedCarousel .row {
+    justify-content: center;
+}
+
+
+
+/* Video Background Section */
+.video-background {
+    position: relative;
+    height: 600px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.video-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background color */
+    text-align: center;
+}
+
+.video-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.video-content p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .video-content h2 {
+        font-size: 2rem;
+    }
+    .video-content p {
+        font-size: 1.2rem;
+    }
+}
+
+.dropdown-menu{
+  background-color:#EEEDEB;
+}
+
+
+/* Footer styling */
+.footer {
+    background-color: black; /* Background color */
+    color: white; /* Text color */
+    padding: 2rem; /* Padding for the footer */
+    text-align: center; /* Center-align text */
+}
+
+.footer a {
+    color: #EADFB4; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Optional: Custom styles for mobile carousel */
+#mobile-products .carousel-item {
+    text-align: center;
+}
+
+#mobile-products .card {
+    margin: auto;
+}
+
+/* Custom styles for mobile view */
+@media (max-width: 767.98px) {
+    #mobile-products .card {
+        width: 80%; /* Adjust width as needed */
+        margin: 0 auto; /* Center align card */
+        border-radius: 0.5rem; /* Optional: Add rounded corners */
+    }
+
+    #mobile-products .card-img-top {
+        height: 110px; /* Adjust image height as needed */
+        object-fit: cover; /* Ensure the image covers the area */
+    }
+
+    #mobile-products .card-body {
+        padding: 1rem; /* Adjust padding as needed */
+    }
+
+    #mobile-products .card-title {
+        font-size: 1.25rem; /* Adjust font size as needed */
+    }
+
+    #mobile-products .card-text {
+        font-size: 0.875rem; /* Adjust font size as needed */
+    }
+
+    #mobile-products .btn {
+        font-size: 0.875rem; /* Adjust button font size */
+        padding: 0.5rem 1rem; /* Adjust button padding */
+    }
+}
+
+
+/* Custom styles for mobile view */
+@media (max-width: 767.98px) {
+    #most-loved .carousel-item .card {
+        width: 90%; /* Adjust width as needed */
+        margin: 0 auto; /* Center align card */
+        border-radius: 0.5rem; /* Optional: Add rounded corners */
+    }
+
+    #most-loved .carousel-item .card-img-top {
+        height: 180px; /* Adjust image height as needed */
+        object-fit: cover; /* Ensure the image covers the area */
+    }
+
+    #most-loved .carousel-item .card-body {
+        padding: 1rem; /* Adjust padding as needed */
+    }
+
+    #most-loved .carousel-item .card-title {
+        font-size: 1.25rem; /* Adjust font size as needed */
+    }
+
+    #most-loved .carousel-item .card-text {
+        font-size: 0.875rem; /* Adjust font size as needed */
+    }
+
+    #most-loved .carousel-item .btn {
+        font-size: 0.875rem; /* Adjust button font size */
+        padding: 0.5rem 1rem; /* Adjust button padding */
+    }
+}
+
+/* General button styling */
+.SHOPPIE {
+    display: inline-block; /* Ensure the button is an inline-block element */
+    padding: 10px 20px; /* Adjust padding for consistent size */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid transparent; /* Border for hover effects */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+
+    /* Background color and text color */
+    background-color: #007bff; /* Background color */
+    color: #fff; /* Text color */
+
+    /* Shadow and other effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+
+    /* Control the width */
+    max-width: 150px; /* Maximum width */
+    width: auto; /* Let the button width adjust based on content */
+    margin: 0 auto; /* Center horizontally if display block */
+    text-align: center; /* Center text */
+}
+
+/* Hover effect */
+.SHOPPIE:hover,
+.SHOPPIE:focus {
+    background-color: #0056b3; /* Hover background color */
+    color: #fff; /* Ensure text color stays white */
+    text-decoration: none; /* Remove underline */
+    border-color: #0056b3; /* Hover border color */
+}
+
+/* Active state */
+.SHOPPIE:active {
+    background-color: #004494; /* Active background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Less shadow */
+}
+
+/* Mobile-specific styling */
+.d-md-none {
+    display: none; /* Hide on medium and larger screens */
+}
+
+.d-block.d-md-none {
+    display: block; /* Show only on small screens */
+}
+
+/* Ensure button sizes are consistent on all viewports */
+@media (max-width: 767px) {
+    .SHOPPIE {
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Smaller font size */
+        max-width: 120px; /* Adjust maximum width for mobile */
+    }
+}
+
+@media (min-width: 768px) {
+    .SHOPPIE {
+        padding: 10px 20px; /* Padding for larger screens */
+        font-size: 16px; /* Font size for larger screens */
+        max-width: 150px; /* Maximum width for larger screens */
+    }
+}
